@@ -23,6 +23,7 @@ function NavBar() {
       <div className="element">
         <Link to="/Passport">Passport </Link>
       </div>
+    </div>
   );
 }
 
