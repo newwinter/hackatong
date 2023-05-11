@@ -26,7 +26,20 @@
 
 .title h2 {
   padding-top: 2rem;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
 
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 h1 {
@@ -96,7 +109,7 @@ button:active:before {
 .monument img {
   height: 20rem;
   width: 25rem;
-  animation: slide-in-elliptic-top-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-timeline: scroll();
   border-radius: 1rem;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.5);

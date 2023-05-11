@@ -1,0 +1,45 @@
+.Navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+  background-color: transparent;
+  font-family: "Sora", sans-serif;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.element {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: 0;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.element:hover {
+  letter-spacing: 3px;
+  background-color: #fd9b35;
+}
+
+.element:active {
+  letter-spacing: 3px;
+  background-color: #fd9b35;
+
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.element a:hover {
+  color: white;
+}
