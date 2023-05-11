@@ -46,7 +46,7 @@ const monuments = [
   },
   {
     id: 6,
-    name: "Piramides de Gizeh",
+    name: "Pyramides de Gizeh",
     description:
       "Situées à environ 20 kilomètres au sud-ouest du Caire en Égypte, les Pyramides de Gizeh sont l'un des ensembles de monuments les plus célèbres et les plus mystérieux du monde. Les trois pyramides principales ont été construites il y a plus de 4500 ans comme tombeaux pour les pharaons Khéops, Khéphren et Mykérinos. Le Sphinx, une statue monumentale avec la tête d'un pharaon et le corps d'un lion, se trouve également à proximité.",
     image_url:
