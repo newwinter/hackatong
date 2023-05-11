@@ -1,0 +1,80 @@
+.PassportTitle {
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.PassportIdentity {
+  padding-left: 15%;
+}
+
+.avatar {
+  height: 70px;
+  position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+  .PassportIdentity p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .PassportIdentity p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .PassportIdentity p {
+    font-size: 16px;
+  }
+}
+
+.PassportBackground {
+  background-image: url("../assets/passportXL.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 558px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .PassportBackground {
+    background-image: url("../assets/passportXS.jpg");
+    height: 279px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .PassportBackground {
+    background-image: url("../assets/passport.jpg");
+    height: 427px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .PassportBackground {
+    background-image: url("../assets/passportXXL.jpg");
+    height: 698px;
+  }
+}
+
+.textPassport {
+  padding-top: 20px;
+  background-color: transparent;
+}
+
+.textPassport article {
+  margin-bottom: 20px;
+  background: none;
+  text-align: center;
+}
+
+.textPassport article p {
+  background: none;
+}
+
+.imgCountryPassport {
+  height: 60px;
+}

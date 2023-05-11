@@ -1,4 +1,5 @@
 const monuments = [
+
   {
     id: 1,
     name: "Big ben",
@@ -37,7 +38,7 @@ const monuments = [
   },
   {
     id: 5,
-    name: "Opéra de Sydney",
+    name: "Opéra de sydney",
     description:
       "Situé dans le port de Sydney, en Australie, l'Opéra de Sydney est un chef-d'œuvre architectural célèbre pour son toit en forme de coquille. Conçu par l'architecte danois Jørn Utzon, le bâtiment a été inauguré en 1973. Il accueille chaque année des centaines de représentations de musique, de danse et de théâtre.",
     image_url:
@@ -46,7 +47,7 @@ const monuments = [
   },
   {
     id: 6,
-    name: "Pyramides de Gizeh",
+    name: "Piramides de Gizeh",
     description:
       "Situées à environ 20 kilomètres au sud-ouest du Caire en Égypte, les Pyramides de Gizeh sont l'un des ensembles de monuments les plus célèbres et les plus mystérieux du monde. Les trois pyramides principales ont été construites il y a plus de 4500 ans comme tombeaux pour les pharaons Khéops, Khéphren et Mykérinos. Le Sphinx, une statue monumentale avec la tête d'un pharaon et le corps d'un lion, se trouve également à proximité.",
     image_url:
@@ -83,3 +84,4 @@ const monuments = [
 ];
 
 export default monuments;
+
