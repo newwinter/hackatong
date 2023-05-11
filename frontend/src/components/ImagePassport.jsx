@@ -1,32 +1,30 @@
-import React from "react";
-import monuments from "@assets/data";
+import React, { useState, useEffect } from "react";
 import tong from "../assets/tongsansfond.png";
 
 const ImagePassport = () => {
-  // const [flags, setFlags] = useState([]);
+  const [flags, setFlags] = useState([]);
 
-  // Problème avec le fetch
+  useEffect(() => {
+    fetch(
+      `https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/index.json`
+    )
+      .then((res) => res.json())
+      .then((json) => setFlags(json))
+      .catch((err) => console.error(err));
+  }, []);
 
-  // useEffect(() => {
-  //   fetch(`https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/index.json`)
-  //     .then(res => res.json())
-  //     .then(json => setFlags(json))
-  //     .catch(err => console.error(err));
-  // }, []);
-
-  return monuments.slice(0, 10).map((monument) => (
-    <article className="col-6" key={monument.id}>
-      <div className="monumentTong">
-        <p className="monumentNamePassport">{monument.country}</p>
-        <img className="imgTongPassport" src={tong} alt="tong" />
-      </div>
-      <img
-        className="imgCountryPassport"
-        src={monument.flag}
-        alt={monument.country}
-      />
-    </article>
-  ));
+  return (
+    flags.length > 0 &&
+    flags.slice(0, 10).map((flag) => (
+      <article className="col-6" key={flag.image}>
+        <div className="monumentTong">
+          <p className="monumentNamePassport">{flag.name}</p>
+          <img className="imgTongPassport" src={tong} alt="tong" />
+        </div>
+        <img className="imgCountryPassport" src={flag.image} alt={flag.name} />
+      </article>
+    ))
+  );
 };
 
 export default ImagePassport;

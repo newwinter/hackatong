@@ -3,7 +3,6 @@ import ImagePassport from "@components/ImagePassport";
 import avatar from "@assets/avatar.jpg";
 import "./PassPort.css";
 
-
 function PassPort() {
   return (
     <div>
