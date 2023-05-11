@@ -72,3 +72,5 @@ const monument = [
       "https://media.discordapp.net/attachments/1106113841487691776/1106160064680697929/tajmahal.jpg?width=1225&height=817",
   },
 ];
+
+export default monument;

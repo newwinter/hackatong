@@ -16,7 +16,7 @@ function Page2() {
         />
       </div>
       <div className="card cardPage2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nemo aut
+        Lorem ipsum dolor dsit amet consectetur adipisicing elit. Illo nemo aut
         id, ullam obcaecati architecto fugiat tempore sint doloremque quam
         aperiam enim in fugit, quidem, aspernatur neque voluptates quod
         temporibus!
