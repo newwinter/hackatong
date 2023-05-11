@@ -1,0 +1,78 @@
+.mainPage2 {
+  background-color: var(--main-color-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.titlePage2 {
+  font-family: "Darumadrop One", cursive;
+  font-size: 5rem;
+}
+
+.containImgPage2 {
+  border-radius: 92% 8% 94% 6% / 6% 95% 5% 94%;
+  border-image-outset: 3rem;
+}
+.imgPage2 {
+  padding: 3rem 0;
+}
+.cardPage2 {
+  margin: 2rem 0 0 10rem;
+  width: 30rem;
+  padding: 1rem;
+  font-size: large;
+  box-shadow: rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(255, 156, 85) 10px -10px 0px 0px, rgb(255, 255, 255) 20px -20px 0px -3px,
+    rgb(255, 217, 19) 20px -20px 0px 0px;
+}
+
+button {
+  --color: #fd9b35;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: inline-block;
+  width: 10rem;
+  height: 4rem;
+  line-height: 2.5em;
+  margin: 2rem 0 2rem 10rem;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 1rem;
+
+  font-weight: 600;
+  color: var(--color);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button:active:before {
+  background: #fd9b35;
+  transition: background 0s;
+}
