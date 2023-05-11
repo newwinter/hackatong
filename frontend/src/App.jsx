@@ -6,7 +6,6 @@ import About from "@pages/About";
 import Contact from "@pages/Contact";
 import Passport from "@pages/PassPort";
 import Footer from "@components/Footer";
-import Header from "@components/Header";
 import NavBar from "@components/NavBar";
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
       <div>
         <NavBar />
       </div>
-      <div></div>
       <Routes>
         <Route path="/" element={<Page1 />} />
         <Route path="/Page2" element={<Page2 />} />
