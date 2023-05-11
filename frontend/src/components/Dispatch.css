@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: center;  
+  text-align: center;
 }
 
 .container img {
@@ -26,7 +26,7 @@
 
 .title h2 {
   padding-top: 2rem;
-  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 @keyframes tracking-in-expand {
@@ -57,7 +57,7 @@ h2 {
   height: 6rem;
 }
 
-button {
+.discover {
   --color: #fd9b35;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: inline-block;
@@ -76,7 +76,7 @@ button {
   color: var(--color);
 }
 
-button:before {
+.discover button:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -86,22 +86,22 @@ button:before {
   border-radius: 50%;
 }
 
-button:hover {
+.discover button:hover {
   color: #fff;
 }
 
-button:before {
+.discover button:before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
 }
 
-button:hover:before {
+.discover button:hover:before {
   top: -30px;
   left: -30px;
 }
 
-button:active:before {
+.discover button:active:before {
   background: #fd9b35;
   transition: background 0s;
 }
@@ -109,21 +109,21 @@ button:active:before {
 .monument img {
   height: 20rem;
   width: 25rem;
-  animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation-timeline: scroll();
   border-radius: 1rem;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.5);
 }
-  @keyframes slide-in-elliptic-top-fwd {
-    0% {
-      transform: translateY(-600px) rotateX(-30deg) scale(0);
-      transform-origin: 50% 100%;
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0) rotateX(0) scale(1);
-      transform-origin: 50% 1400px;
-      opacity: 1;
-    }
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
 }
-
