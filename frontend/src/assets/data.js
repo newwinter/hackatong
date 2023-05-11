@@ -1,4 +1,4 @@
-const monument = [
+const monuments = [
   {
   id: 1,
   name: "Big ben",
@@ -55,3 +55,5 @@ const monument = [
 },
 
 ]
+
+export default monuments;
