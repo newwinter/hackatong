@@ -18,7 +18,9 @@ function Dispatch() {
               <img src={monument.image_url} alt="momument" />
             </div>
             <div>
-              <button type="button">Discover</button>
+              <button className="discover" type="button">
+                Discover
+              </button>
             </div>
           </div>
         ))}

@@ -6,7 +6,6 @@ import About from "@pages/About";
 import Contact from "@pages/Contact";
 import Passport from "@pages/PassPort";
 import Footer from "@components/Footer";
-import Header from "@components/Header";
 import NavBar from "@components/NavBar";
 import HomePageNew from "@pages/HomePageNew";
 
