@@ -4,13 +4,13 @@ import Page1 from "@pages/Page1";
 import Page2 from "@pages/Page2";
 import Passport from "@pages/PassPort";
 import Footer from "@components/Footer";
-import NavBar from "@components/NavBar";
+import Header from "@components/Header";
 
 function App() {
   return (
     <Router>
       <div>
-        <NavBar />
+        <Header />
       </div>
       <Routes>
         <Route path="/" element={<Page1 />} />
