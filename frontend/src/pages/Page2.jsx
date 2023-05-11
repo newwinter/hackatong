@@ -1,26 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import "@pages/Page2.css";
+import monuments from "@assets/data";
 
 function Page2() {
+  useEffect(() => {
+    document.title = `Hackatong -${monuments.name}`;
+  }, []);
+
   return (
     <div className="mainPage2">
       <div>
-        <h1 className="titlePage2">La Tour de Pise</h1>
+        <h1 className="titlePage2">
+          {monuments.flag} {monuments.name} {monuments.flag}
+        </h1>
       </div>
       <div className="imgPage2">
         <img
-          src="https://media.discordapp.net/attachments/1106113841487691776/1106160974408466442/TourDePise.jpg?width=1089&height=817"
-          alt="La Tour de Pise"
+          src={monuments.image_url}
+          alt={monuments.name}
           className="img-fluid containImgPage2"
         />
       </div>
-      <div className="card cardPage2">
-        Lorem ipsum dolor dsit amet consectetur adipisicing elit. Illo nemo aut
-        id, ullam obcaecati architecto fugiat tempore sint doloremque quam
-        aperiam enim in fugit, quidem, aspernatur neque voluptates quod
-        temporibus!
-      </div>
+      <div className="card cardPage2">{monuments.description}</div>
       <div className="card cardPage2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nemo aut
         id, ullam obcaecati architecto fugiat tempore sint doloremque quam
@@ -33,9 +36,11 @@ function Page2() {
         aperiam enim in fugit, quidem, aspernatur neque voluptates quod
         temporibus!
       </div>
-      <button type="button" className="css-button-retro">
-        Valide ta Quête
-      </button>
+      <Link to="/PassPort">
+        <button type="button" className="css-button-retro">
+          Valide ta Quête
+        </button>
+      </Link>
     </div>
   );
 }
