@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Page1 from "@pages/Page1";
 import Page2 from "@pages/Page2";
-import Page3 from "@pages/Page3";
+
 import About from "@pages/About";
 import Contact from "@pages/Contact";
 import Passport from "@pages/PassPort";
