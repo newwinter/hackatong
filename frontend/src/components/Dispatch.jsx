@@ -11,7 +11,7 @@ function Dispatch() {
         {monuments.map((monument) => (
           <div className="container_monument">
             <div className="title">
-              <img src={monument.tong_url} className="tong" alt="tong" />
+              <img src={monument.tong_url} className="tong containerImg" alt="tong" />
               <h2 key={monument.id}>{monument.name}</h2>
             </div>
             <div className="monument">
