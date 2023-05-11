@@ -1,12 +1,18 @@
-import React from "react";
-import header from "@assets/header.png";
+import React, { useState, useEffect } from "react";
+import Banner from "@components/Banner.jsx";
 import "@components/Header.css";
 
 function Header() {
-  // let firstname = prompt("Quel est votre prénom ?")
+  const [firstname, setFirstName] = useState("toi");
+
+  useEffect(() => {
+    const name = window.prompt("Quel est votre prénom ?");
+    setFirstName(name);
+  }, []);
   return (
     <div className="header-container">
-      <img className="header-img" src={header} alt="logo de hackatong" />
+      <Banner />
+      <h1>{`Bonjour ${firstname} !`}</h1>
     </div>
   );
 }
