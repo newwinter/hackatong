@@ -8,6 +8,7 @@ const monuments = [
       "https://media.discordapp.net/attachments/1106113841487691776/1106160061383966760/BigBen.jpg?width=1224&height=817",
     country: "England",
     flag: "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/ENGLAND.svg",
+    tong_url: "src/assets/english.png",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const monuments = [
       "https://media.discordapp.net/attachments/1106113841487691776/1106160061706948638/ChrisRedempteur.jpg?width=1305&height=720",
     country: "Brazil",
     flag: "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/BR.svg",
+    tong_url: "src/assets/brazil.png",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const monuments = [
       "https://media.discordapp.net/attachments/1106113841487691776/1106160064332582912/StatueLiberty.jpg?width=1079&height=719",
     country: "United States",
     flag: "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/US.svg",
+    tong_url: "src/assets/usa.png",
   },
   {
     id: 4,
@@ -41,7 +44,7 @@ const monuments = [
   },
   {
     id: 5,
-    name: "Opéra de sydney",
+    name: "Opéra de Sydney",
     description:
       "Situé dans le port de Sydney, en Australie, l'Opéra de Sydney est un chef-d'œuvre architectural célèbre pour son toit en forme de coquille. Conçu par l'architecte danois Jørn Utzon, le bâtiment a été inauguré en 1973. Il accueille chaque année des centaines de représentations de musique, de danse et de théâtre.",
     image_url:
@@ -51,13 +54,14 @@ const monuments = [
   },
   {
     id: 6,
-    name: "Piramides de Gizeh",
+    name: "Pyramides de Gizeh",
     description:
       "Situées à environ 20 kilomètres au sud-ouest du Caire en Égypte, les Pyramides de Gizeh sont l'un des ensembles de monuments les plus célèbres et les plus mystérieux du monde. Les trois pyramides principales ont été construites il y a plus de 4500 ans comme tombeaux pour les pharaons Khéops, Khéphren et Mykérinos. Le Sphinx, une statue monumentale avec la tête d'un pharaon et le corps d'un lion, se trouve également à proximité.",
     image_url:
       "https://media.discordapp.net/attachments/1106113841487691776/1106160064055738469/PyramidesGizeh.jpg?width=1305&height=734",
     country: "Egypt",
     flag: "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/EG.svg",
+    tong_url: "src/assets/egyptian.png",
   },
 
   {
@@ -69,6 +73,7 @@ const monuments = [
       "https://media.discordapp.net/attachments/1106113841487691776/1106160062604529715/MountRushmore.jpg?width=1190&height=817",
     country: "United States",
     flag: "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/US.svg",
+    tong_url: "src/assets/usa.png",
   },
   {
     id: 8,
@@ -79,6 +84,7 @@ const monuments = [
       "https://media.discordapp.net/attachments/1106113841487691776/1106160974408466442/TourDePise.jpg?width=1089&height=817",
     country: "Italy",
     flag: "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IT.svg",
+    tong_url: "src/assets/italian.png",
   },
   {
     id: 9,
@@ -89,6 +95,7 @@ const monuments = [
       "https://media.discordapp.net/attachments/1106113841487691776/1106160064680697929/tajmahal.jpg?width=1225&height=817",
     country: "India",
     flag: "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/IN.svg",
+    tong_url: "src/assets/indian.png",
   },
 ];
 

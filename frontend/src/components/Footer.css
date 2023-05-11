@@ -1,0 +1,27 @@
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color-orange);
+}
+
+.mentions {
+  font-size: 1rem;
+  color: black;
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--main-color-orange);
+}
+
+p {
+  background-color: var(--main-color-orange);
+  padding-right: 1rem;
+}
+
+img.insta,
+img.facebook {
+  height: 2rem;
+  padding-left: 1rem;
+  background-color: var(--main-color-orange);
+}
