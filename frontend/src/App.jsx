@@ -8,6 +8,7 @@ import Passport from "@pages/PassPort";
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 import NavBar from "@components/NavBar";
+import HomePageNew from "@pages/HomePageNew";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <div>
         <NavBar />
       </div>
-      <div></div>
+      <div />
       <Routes>
+        <Route path="/Homepage" element={<HomePageNew />} />
         <Route path="/" element={<Page1 />} />
         <Route path="/Page2" element={<Page2 />} />
         <Route path="/About" element={<About />} />

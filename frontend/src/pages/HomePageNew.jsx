@@ -36,7 +36,6 @@ function HomePageNew() {
             value={userAge}
             onChange={(e) => setUserAge(e.target.value)}
           />
-           {console.log(userName, userAge)}
         </label>
         </form>
         <p>Tu es prêt·e ? Alors enfile ta plus belle paire de claquettes chaussettes, et... </p>
