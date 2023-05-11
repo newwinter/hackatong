@@ -35,7 +35,7 @@ button {
   width: 10rem;
   height: 4rem;
   line-height: 2.5em;
-  margin: 2rem 0 0 10rem;
+  margin: 2rem 0 2rem 10rem;
   position: relative;
   overflow: hidden;
   border: 2px solid var(--color);
