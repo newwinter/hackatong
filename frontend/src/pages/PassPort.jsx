@@ -1,7 +1,8 @@
 import React from "react";
+import ImagePassport from "@components/ImagePassport";
 import avatar from "@assets/avatar.jpg";
 import "./PassPort.css";
-import monument from "@assets/data";
+
 
 function PassPort() {
   return (
@@ -26,17 +27,9 @@ function PassPort() {
           </article>
         </div>
       </div>
-
       <div className="PassportBackground container">
         <div className="row textPassport">
-          <article className="col-6">
-            <p>{monument[1].name}</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
-          <article className="col-6 col-md-6 col-xs-3">
-            <p>{monument[2].name}</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
+          <ImagePassport />
         </div>
       </div>
     </div>
