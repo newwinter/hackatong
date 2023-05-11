@@ -33,7 +33,6 @@ const monuments = [
       "Construite pour l'Exposition universelle de Paris de 1889, la Tour Eiffel est un symbole emblématique de la France et l'un des monuments les plus célèbres du monde. La tour, qui mesure 324 mètres de haut, était à l'époque la plus haute structure jamais construite. Elle est aujourd'hui l'une des attractions touristiques les plus populaires au monde, avec plus de 7 millions de visiteurs chaque année.",
     image_url:
       "https://media.discordapp.net/attachments/1106113841487691776/1106160061383966760/BigBen.jpg?width=1224&height=817",
-    tong_url: "src/assets/french.png",
   },
   {
     id: 5,
@@ -42,7 +41,6 @@ const monuments = [
       "Situé dans le port de Sydney, en Australie, l'Opéra de Sydney est un chef-d'œuvre architectural célèbre pour son toit en forme de coquille. Conçu par l'architecte danois Jørn Utzon, le bâtiment a été inauguré en 1973. Il accueille chaque année des centaines de représentations de musique, de danse et de théâtre.",
     image_url:
       "https://media.discordapp.net/attachments/1106113841487691776/1106160063237857280/OperaSydney.jpg?width=1290&height=817",
-    tong_url: "src/assets/australian.png",
   },
   {
     id: 6,
@@ -81,5 +79,4 @@ const monuments = [
     tong_url: "src/assets/indian.png",
   },
 ];
-
 export default monuments;
