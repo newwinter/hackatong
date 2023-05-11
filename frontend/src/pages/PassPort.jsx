@@ -30,71 +30,14 @@ function PassPort() {
 
       <div className="PassportBackground container">
         <div className="row textPassport">
-          <article className="col-lg-2">
-          </article>
-          <article className="col-lg-3">
+          <article className="col-6">
             <p>{monument[1].name}</p>
             <img className="imgCountryPassport" src={avatar} alt="" />
           </article>
-          <article className="col-lg-3">
-          </article>
-          <article className="col-lg-4">
+          <article className="col-6 col-md-6 col-xs-3">
             <p>{monument[2].name}</p>
             <img className="imgCountryPassport" src={avatar} alt="" />
           </article>
-
-          <article className="col-lg-2">
-          </article>
-          <article className="col-lg-2">
-            <p>Test</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
-          <article className="col-lg-4">
-          </article>
-          <article className="col-lg-4">
-            <p>Test</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
-
-          <article className="col-lg-2">
-          </article>
-          <article className="col-lg-2">
-            <p>Test</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
-          <article className="col-lg-4">
-          </article>
-          <article className="col-lg-4">
-            <p>Test</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
-
-          <article className="col-lg-2">
-          </article>
-          <article className="col-lg-2">
-            <p>Test</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
-          <article className="col-lg-4">
-          </article>
-          <article className="col-lg-4">
-            <p>Test</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
-
-          <article className="col-lg-2">
-          </article>
-          <article className="col-lg-2">
-            <p>Test</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
-          <article className="col-lg-4">
-          </article>
-          <article className="col-lg-4">
-            <p>Test</p>
-            <img className="imgCountryPassport" src={avatar} alt="" />
-          </article>
-
         </div>
       </div>
     </div>

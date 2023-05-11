@@ -68,6 +68,7 @@
 .textPassport article {
   margin-bottom: 20px;
   background: none;
+  text-align: center;
 }
 
 .textPassport article p {
