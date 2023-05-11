@@ -2,4 +2,8 @@
   --main-color-blue: #eef4f5;
   --main-color-orange: #ff7a00;
   --main-font: "Sora", sans-serif;
+
+* {
+  background-color: var(--main-color-blue);
+  font-family: var(--main-font);
 }
