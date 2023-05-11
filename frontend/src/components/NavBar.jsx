@@ -20,7 +20,9 @@ function NavBar() {
       <div className="element">
         <Link to="/Contact">Contact </Link>
       </div>
-    </div>
+      <div className="element">
+        <Link to="/Passport">Passport </Link>
+      </div>
   );
 }
 

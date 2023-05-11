@@ -5,6 +5,7 @@ import Page2 from "@pages/Page2";
 import Page3 from "@pages/Page3";
 import About from "@pages/About";
 import Contact from "@pages/Contact";
+import Passport from "@pages/PassPort";
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 import NavBar from "@components/NavBar";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Page3" element={<Page3 />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/Passport" element={<Passport />} />
       </Routes>
       <Footer />
     </Router>
