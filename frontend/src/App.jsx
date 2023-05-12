@@ -14,7 +14,7 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Page1 />} />
-        <Route path="/Page2" element={<Page2 />} />
+        <Route path="/Page2/:id" element={<Page2 />} />
         <Route path="/Passport" element={<Passport />} />
       </Routes>
       <Footer />
