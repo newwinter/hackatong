@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Page1 from "@pages/Page1";
 import Page2 from "@pages/Page2";
-import About from "@pages/About";
+import About from "@components/About";
 import Passport from "@pages/PassPort";
 import Footer from "@components/Footer";
 import NavBar from "@components/NavBar";
