@@ -1,15 +1,10 @@
-import React, { useEffect } from "react";
+import React, from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import "@pages/Page2.css";
 import monuments from "@assets/data";
 
 function Page2() {
-  useEffect(() => {
-    document.title = Hackatong;
-  }, []);
-
-
   const monument = monuments[5];
 
   return (
