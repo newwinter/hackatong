@@ -1,29 +1,26 @@
 import React, { useState, useEffect } from "react";
 import tong from "../assets/tongsansfond.png";
 
-const ImagePassport = () => {
-  const [flags, setFlags] = useState([]);
+const ImagePassport = ({ flags }) => {
 
-  useEffect(() => {
-    fetch(
-      `https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/index.json`
-    )
-      .then((res) => res.json())
-      .then((json) => setFlags(json))
-      .catch((err) => console.error(err));
-  }, []);
+  // flags vient de l'App.jsx en useEffect into fetch en passant par le composant PassPort
 
   return (
     flags.length > 0 &&
-    flags.slice(0, 10).map((flag) => (
-      <article className="col-6" key={flag.image}>
-        <div className="monumentTong">
-          <p className="monumentNamePassport">{flag.name}</p>
-          <img className="imgTongPassport" src={tong} alt="tong" />
-        </div>
-        <img className="imgCountryPassport" src={flag.image} alt={flag.name} />
-      </article>
-    ))
+    flags.slice(0, 10).map((flag) => {
+      // if (flag.name === 'Antartica') {
+      return (
+        <article className="col-6" key={flag.image}>
+          <div className="monumentTong">
+            <p className="monumentNamePassport">{flag.name}</p>
+            <img className="imgTongPassport" src={tong} alt="tong" />
+          </div>
+          <img className="imgCountryPassport" src={flag.image} alt={flag.name} />
+        </article>
+      )
+      // }
+    }
+    )
   );
 };
 
