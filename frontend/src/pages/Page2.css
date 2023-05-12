@@ -27,7 +27,7 @@
     rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px 0px 0px;
 }
 
-button {
+.css-button-retro {
   --color: #ef9b4d;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: inline-block;
@@ -41,12 +41,11 @@ button {
   transition: color 0.5s;
   z-index: 1;
   font-size: 1rem;
-
   font-weight: 600;
   color: var(--color);
 }
 
-button:before {
+.css-button-retro:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -56,22 +55,22 @@ button:before {
   border-radius: 50%;
 }
 
-button:hover {
+.css-button-retro:hover {
   color: #fff;
 }
 
-button:before {
+.css-button-retro:before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
 }
 
-button:hover:before {
+.css-button-retro:hover:before {
   top: -30px;
   left: -30px;
 }
 
-button:active:before {
+.css-button-retro:active:before {
   background: #ef9b4d;
   transition: background 0s;
 }
