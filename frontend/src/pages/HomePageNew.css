@@ -13,10 +13,59 @@
 
 .homepage-container {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .homepage-container button {
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.discover a {
+  --color: #ef9b4d;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color);
+}
+
+.discover a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.discover a:hover {
+  color: #fff;
+}
+
+.discover a:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.homepage-button a:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.discover a:active:before {
+  background: #ef9b4d;
+  transition: background 0s;
 }

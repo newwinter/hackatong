@@ -1,23 +1,39 @@
 .about-title {
   text-align: center;
   font-size: x-large;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .about-description img {
   height: 17rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   border-radius: 1rem;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   margin: auto;
-  flex-direction: raw;
+  animation: swirl-in-fwd 0.8s ease-out both;
 }
 
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
 .about-description p {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: none;
   margin-top: 1rem;
+}
+
+.about-description {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }

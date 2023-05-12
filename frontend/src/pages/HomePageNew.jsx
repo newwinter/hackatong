@@ -14,12 +14,12 @@ function HomePageNew({ setUserName, userName, setUserAge, userAge }) {
           Tu trouveras ici les plus beaux monuments du monde...
           <br /> Nous te proposons de parcourir ces lieux et, lorsque tu les
           auras visités, une surprise t'attendra ! <br />
-          Pour une meilleure expérience utilisateur·ice, saisis ton prénom
-          et ton âge ci-dessous :
+          Pour une meilleure expérience utilisateur·ice, saisis ton prénom et
+          ton âge ci-dessous :
         </p>
         <form className="homepage-form">
           <label id="user-name">
-          Ton prénom ici :
+            Ton prénom ici :
             <input
               type="text"
               name="userName"
@@ -41,11 +41,9 @@ function HomePageNew({ setUserName, userName, setUserAge, userAge }) {
           Tu es prêt·e ? Alors enfile ta plus belle paire de claquettes
           chaussettes, et...
         </p>
-        <Link to="/Page1">
-          <button className="homepage-button" type="button">
-            let's begin!
-          </button>
-        </Link>
+        <div className="discover">
+          <Link to="/Page1">Let's Begin !</Link>
+        </div>
       </div>
     </div>
   );
