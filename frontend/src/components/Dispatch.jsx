@@ -20,7 +20,7 @@ function Dispatch() {
             </div>
             <div className="monument-button">
               <div className="discover">
-                <Link to={`/Page2/${monument.id}`}>Let's Go !</Link>
+                <Link to={/Page2}>Let's Go !</Link>
               </div>
             </div>
           </div>
