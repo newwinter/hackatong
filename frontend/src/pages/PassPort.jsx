@@ -3,7 +3,7 @@ import ImagePassport from "@components/ImagePassport";
 import avatar from "@assets/avatar.jpg";
 import "./PassPort.css";
 
-function PassPort() {
+function PassPort({ flags }) {
   return (
     <div>
       <h1 className="PassportTitle">Passeport</h1>
@@ -28,7 +28,7 @@ function PassPort() {
       </div>
       <div className="PassportBackground container">
         <div className="row textPassport">
-          <ImagePassport />
+          <ImagePassport flags={flags} />
         </div>
       </div>
     </div>
