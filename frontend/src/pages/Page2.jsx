@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../App.css";
 import "@pages/Page2.css";
 
-function Page2() {
+function Page2({ countryValidated, countries }) {
+  // console.log(countries)
+  // console.log(countryValidated)
+  // const [flags, setFlags] = useState([]);
+
+  // useEffect(() => {
+  //   fetch(
+  //     `https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/index.json`
+  //   )
+  //     .then((res) => res.json())
+  //     .then((json) => setFlags(json))
+  //     .catch((err) => console.error(err));
+  // }, []);
+
   return (
     <div className="mainPage2">
       <div>
@@ -33,7 +46,7 @@ function Page2() {
         aperiam enim in fugit, quidem, aspernatur neque voluptates quod
         temporibus!
       </div>
-      <button type="button" className="css-button-retro">
+      <button type="button" className="css-button-retro" onClick={() => countryValidated('1', 'France')}>
         Valide ta Quête
       </button>
     </div>
