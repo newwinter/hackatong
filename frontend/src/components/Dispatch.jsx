@@ -20,7 +20,11 @@ function Dispatch() {
             </div>
             <div className="monument-button">
               <div className="discover">
-                <Link to={/Page2}>Let's Go !</Link>
+                <Link to={/Page2}>
+                <button type="button" className="discover">
+                  Discover
+                </button>
+              </Link>
               </div>
             </div>
           </div>
