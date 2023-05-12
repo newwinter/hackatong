@@ -1,29 +1,25 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable prettier/prettier */
-import React, { useState } from "react";
 import "./HomePageNew.css";
 import { Link } from "react-router-dom";
 import Banner from "@components/Banner";
 
-function HomePageNew() {
-  const [userName, setUserName] = useState("");
-  const [userAge, setUserAge] = useState("");
-  function submit() {
-    <Link to="/">Page1 </Link>;
-  }
+function HomePageNew({ setUserName, userName, setUserAge, userAge }) {
   return (
     <div>
       <div className="homepage-container">
         <h1>Welcome, dear tong-trotter!</h1>
         <Banner />
         <p className="homepage-description">
-          Tu trouveras ici les plus beaux monuments du monde...<br></br> Nous te
-          proposons de parcourir ces lieux et, lorsque tu les auras visités, une
-          surprise t'attendra ! <br></br>Pour une meilleure expérience
-          utilisateur·ice, saisis quelques infos ci-dessous
+          Tu trouveras ici les plus beaux monuments du monde...
+          <br /> Nous te proposons de parcourir ces lieux et, lorsque tu les
+          auras visités, une surprise t'attendra ! <br />
+          Pour une meilleure expérience utilisateur·ice, saisis ton prénom
+          et ton âge ci-dessous :
         </p>
         <form className="homepage-form">
           <label id="user-name">
-            Ton prénom ici :
+          Ton prénom ici :
             <input
               type="text"
               name="userName"
@@ -31,10 +27,10 @@ function HomePageNew() {
               onChange={(e) => setUserName(e.target.value)}
             />
           </label>
-          <label id="user_age">
+          <label id="user-age">
             Ton âge ici :
             <input
-              type="text"
+              type="number"
               name="userAge"
               value={userAge}
               onChange={(e) => setUserAge(e.target.value)}
@@ -43,15 +39,16 @@ function HomePageNew() {
         </form>
         <p>
           Tu es prêt·e ? Alors enfile ta plus belle paire de claquettes
-          chaussettes, et...{" "}
+          chaussettes, et...
         </p>
-        <button className="homepage-button" type="button" onClick={submit}>
-          let's begin!
-        </button>
+        <Link to="/Page1">
+          <button className="homepage-button" type="button">
+            let's begin!
+          </button>
+        </Link>
       </div>
     </div>
   );
 }
 
 export default HomePageNew;
-

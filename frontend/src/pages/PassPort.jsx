@@ -1,27 +1,18 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import ImagePassport from "@components/ImagePassport";
-import avatar from "@assets/avatar.jpg";
 import "./PassPort.css";
 
-function PassPort({ flags }) {
+function PassPort({ flags, userName, userAge }) {
   return (
     <div>
-      <h1 className="PassportTitle">Passeport</h1>
+      <h1 className="PassportTitle"> Passeport de {userName}</h1>
       <div className="PassportIdentity container">
         <div className="row">
-          <article className="col-7">
-            <p>Nom de famille : Bob</p>
+          <article className="col-8">
+            <p>Âge : {userAge} ans</p>
           </article>
-          <article className="col-3">
-            <img className="avatar" src={avatar} alt="Avatar" />
-          </article>
-          <article className="col-7">
-            <p>Prénom : Smith</p>
-          </article>
-          <article className="col-7">
-            <p>Âge : 30 ans</p>
-          </article>
-          <article className="col-5">
+          <article className="col-8">
             <p>Tongpon(s) : 0</p>
           </article>
         </div>

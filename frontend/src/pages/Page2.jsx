@@ -1,27 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import "@pages/Page2.css";
 import monuments from "@assets/data";
 
-function Page2({ countryValidated, countries }) {
-  // console.log(countries)
-  // console.log(countryValidated)
-  // const [flags, setFlags] = useState([]);
-
-  // useEffect(() => {
-  //   fetch(
-  //     `https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/index.json`
-  //   )
-  //     .then((res) => res.json())
-  //     .then((json) => setFlags(json))
-  //     .catch((err) => console.error(err));
-  // }, []);
-
+function Page2() {
   useEffect(() => {
     document.title = `Hackatong -${monuments.name}`;
   }, []);
-
 
   return (
     <div className="mainPage2">
@@ -51,7 +37,7 @@ function Page2({ countryValidated, countries }) {
         temporibus!
       </div>
       <Link to="/PassPort">
-        <button type="button" className="css-button-retro" onClick={() => countryValidated('1', 'France')}>
+        <button type="button" className="css-button-retro">
           Valide ta Quête
         </button>
       </Link>
