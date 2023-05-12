@@ -20,3 +20,7 @@
   text-align: center;
   margin-bottom: 2rem;
 }
+
+.homepage-container p {
+  font-size: medium;
+}
