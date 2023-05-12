@@ -45,11 +45,9 @@ function HomePageNew({ setUserName, userName, setUserAge, userAge }) {
           Tu es prêt·e ? Alors enfile ta plus belle paire de claquettes
           chaussettes, et...
         </p>
-        <Link to="/Page1">
-          <button className="homepage-button" type="button">
-            let's begin!
-          </button>
-        </Link>
+        <div className="discover">
+          <Link to="/Page1">Let's Begin !</Link>
+        </div>
       </div>
     </div>
   );
