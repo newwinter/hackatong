@@ -8,7 +8,7 @@ function Dispatch() {
     <div>
       <h1>Les Expéditions</h1>
 
-      <div className="container">
+      <div className="container-dispatch">
         {monuments.map((monument) => (
           <div className="container_monument">
             <div className="title">
@@ -18,9 +18,11 @@ function Dispatch() {
             <div className="monument">
               <img src={monument.image_url} alt="momument" />
             </div>
-            <div>
+            <div className="monument-button">
               <Link to={`/Page2/${monument.id}`}>
-                <button type="button">Discover</button>
+                <button type="button" className="discover">
+                  Discover
+                </button>
               </Link>
             </div>
           </div>
