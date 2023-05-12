@@ -13,7 +13,8 @@
 
 .containImgPage2 {
   border-radius: 92% 8% 94% 6% / 6% 95% 5% 94%;
-  border-image-outset: 3rem;
+  outline-offset: 1rem;
+  outline: 5px dashed #ef9b4d;
 }
 .imgPage2 {
   padding: 3rem 0;
