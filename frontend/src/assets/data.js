@@ -1,7 +1,7 @@
 const monuments = [
   {
     id: 1,
-    name: "Big ben",
+    name: "Big Ben",
     description:
       "Situé à Londres, Big Ben est le surnom donné à la grande cloche de 13,5 tonnes qui se trouve dans le clocher du Palais de Westminster. La tour qui la surmonte, haute de 96 mètres, est devenue un symbole de la ville de Londres depuis son achèvement en 1858. Big Ben est l'une des horloges les plus célèbres au monde, et son carillon distinctif sonne régulièrement pour marquer les heures et les événements importants.",
     image_url:
@@ -41,6 +41,7 @@ const monuments = [
       "https://media.discordapp.net/attachments/1106113841487691776/1106160061383966760/BigBen.jpg?width=1224&height=817",
     country: "France",
     flag: "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/FR.svg",
+    tong_url: "src/assets/french.png",
   },
   {
     id: 5,
@@ -51,6 +52,7 @@ const monuments = [
       "https://media.discordapp.net/attachments/1106113841487691776/1106160063237857280/OperaSydney.jpg?width=1290&height=817",
     country: "Australia",
     flag: "https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/images/AU.svg",
+    tong_url: "src/assets/french.png",
   },
   {
     id: 6,

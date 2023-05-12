@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "./HomePageNew.css";
 import { Link } from "react-router-dom";
+import Banner from "@components/Banner";
 
 function HomePageNew() {
   const [userName, setUserName] = useState("");
@@ -13,11 +14,12 @@ function HomePageNew() {
     <div>
       <div className="homepage-container">
         <h1>Welcome, dear tong-trotter!</h1>
+        <Banner />
         <p className="homepage-description">
-          Tu trouveras ici les plus beaux monuments du monde... Nous te
+          Tu trouveras ici les plus beaux monuments du monde...<br></br> Nous te
           proposons de parcourir ces lieux et, lorsque tu les auras visités, une
-          surprise t'attendra ! Pour une meilleure expérience utilisateur·ice,
-          saisis quelques infos ci-dessous
+          surprise t'attendra ! <br></br>Pour une meilleure expérience
+          utilisateur·ice, saisis quelques infos ci-dessous
         </p>
         <form className="homepage-form">
           <label id="user-name">
@@ -52,3 +54,4 @@ function HomePageNew() {
 }
 
 export default HomePageNew;
+

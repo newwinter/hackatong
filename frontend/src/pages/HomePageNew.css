@@ -4,3 +4,18 @@
   gap: 1rem;
   margin-bottom: 2rem;
 }
+
+.homepage-container p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 3rem;
+}
+
+.homepage-container {
+  text-align: center;
+}
+
+.homepage-container button {
+  text-align: center;
+}
+
