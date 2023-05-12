@@ -6,7 +6,7 @@ import monuments from "@assets/data";
 
 function Page2() {
   useEffect(() => {
-    document.title = Hackatong -${monuments.name};
+    document.title = Hackatong;
   }, []);
 
 
