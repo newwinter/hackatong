@@ -1,4 +1,4 @@
-.container {
+.container-dispatch {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -62,7 +62,7 @@ h2 {
   height: 6rem;
 }
 
-.discover {
+.discover a {
   --color: #ef9b4d;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   display: inline-block;
@@ -71,17 +71,17 @@ h2 {
   line-height: 2.5em;
   margin: 20px;
   position: relative;
+  text-decoration: none;
   overflow: hidden;
   border: 2px solid var(--color);
   transition: color 0.5s;
   z-index: 1;
   font-size: 1rem;
-
   font-weight: 600;
   color: var(--color);
 }
 
-.discover button:before {
+.discover a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -91,22 +91,22 @@ h2 {
   border-radius: 50%;
 }
 
-.discover button:hover {
+.discover a:hover {
   color: #fff;
 }
 
-.discover button:before {
+.discover a:before {
   top: 100%;
   left: 100%;
   transition: all 0.7s;
 }
 
-.discover button:hover:before {
+.discover a:hover:before {
   top: -30px;
   left: -30px;
 }
 
-.discover button:active:before {
+.discover a:active:before {
   background: #ef9b4d;
   transition: background 0s;
 }
