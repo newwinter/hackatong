@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--main-color-orange);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .mentions {
@@ -14,7 +18,7 @@
   background-color: var(--main-color-orange);
 }
 
-p {
+.mentions p {
   background-color: var(--main-color-orange);
   padding-right: 1rem;
 }
