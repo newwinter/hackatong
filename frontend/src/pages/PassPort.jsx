@@ -13,7 +13,7 @@ function PassPort({ flags, userName, userAge }) {
             <p>Âge : {userAge} ans</p>
           </article>
           <article className="col-8">
-            <p>Tongpon(s) : 0</p>
+            <p>Tamptong(s) : 0</p>
           </article>
         </div>
       </div>
