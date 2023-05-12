@@ -68,4 +68,8 @@
 .discover a:active:before {
   background: #ef9b4d;
   transition: background 0s;
+
+.homepage-container p {
+  font-size: medium;
+
 }

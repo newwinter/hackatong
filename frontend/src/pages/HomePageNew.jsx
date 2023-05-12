@@ -11,9 +11,13 @@ function HomePageNew({ setUserName, userName, setUserAge, userAge }) {
         <h1>Welcome, dear tong-trotter!</h1>
         <Banner />
         <p className="homepage-description">
-          Tu trouveras ici les plus beaux monuments du monde...
-          <br /> Nous te proposons de parcourir ces lieux et, lorsque tu les
-          auras visités, une surprise t'attendra ! <br />
+          Hackatong est un site de voyage innovant qui te permet de découvrir de
+          nouvelles destinations et cultures en tamponnant ton passeport avec
+          des tampons en forme de tong personnalisés appelés "tamptongs". Chaque
+          lieu visité est validé par un tamptong unique et à la fin du parcours,
+          une paire de tongs à l'effigie du pays visité te sera offerte.
+        </p>
+        <p>
           Pour une meilleure expérience utilisateur·ice, saisis ton prénom et
           ton âge ci-dessous :
         </p>
