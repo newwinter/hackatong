@@ -6,38 +6,29 @@ import monuments from "@assets/data";
 
 function Page2() {
   useEffect(() => {
-    document.title = `Hackatong -${monuments.name}`;
+    document.title = Hackatong -${monuments.name};
   }, []);
+
+
+  const monument = monuments[5];
 
   return (
     <div className="mainPage2">
       <div>
-        <h1 className="titlePage2">
-          {monuments.flag} {monuments.name} {monuments.flag}
-        </h1>
+        <h1 className="titlePage2">{monument.name} </h1>
       </div>
       <div className="imgPage2">
         <img
-          src={monuments.image_url}
-          alt={monuments.name}
+          src={monument.image_url}
+          alt={monument.name}
           className="img-fluid containImgPage2"
         />
       </div>
-      <div className="card cardPage2">{monuments.description}</div>
-      <div className="card cardPage2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nemo aut
-        id, ullam obcaecati architecto fugiat tempore sint doloremque quam
-        aperiam enim in fugit, quidem, aspernatur neque voluptates quod
-        temporibus!
-      </div>
-      <div className="card cardPage2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nemo aut
-        id, ullam obcaecati architecto fugiat tempore sint doloremque quam
-        aperiam enim in fugit, quidem, aspernatur neque voluptates quod
-        temporibus!
-      </div>
+      <div className="card cardPage2">{monument.description}</div>
       <Link to="/PassPort">
+
         <button type="button" className="css-button-retro">
+
           Valide ta Quête
         </button>
       </Link>

@@ -6,16 +6,16 @@ function NavBar() {
   return (
     <div className="Navbar">
       <div className="element">
-        <Link to="/">Home </Link>
+        <Link to="/">Accueil</Link>
       </div>
       <div className="element">
         <Link to="/Page1">Monuments </Link>
       </div>
       <div className="element">
-        <Link to="/About">About </Link>
+        <Link to="/About">A Propos </Link>
       </div>
       <div className="element">
-        <Link to="/Passport">Passport </Link>
+        <Link to="/Passport">Passeport </Link>
       </div>
     </div>
   );

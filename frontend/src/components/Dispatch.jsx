@@ -19,11 +19,9 @@ function Dispatch() {
               <img src={monument.image_url} alt="momument" />
             </div>
             <div className="monument-button">
-              <Link to={`/Page2/${monument.id}`}>
-                <button type="button" className="discover">
-                  Discover
-                </button>
-              </Link>
+              <div className="discover">
+                <Link to={`/Page2/${monument.id}`}>Let's Go !</Link>
+              </div>
             </div>
           </div>
         ))}
