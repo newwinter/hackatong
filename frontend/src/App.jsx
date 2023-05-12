@@ -32,7 +32,6 @@ function App() {
           }
         />
         <Route path="/Page1" element={<Page1 />} />
-        <Route path="/Page2/:id" element={<Page2 />} />
         <Route path="/Page2" element={<Page2 />} />
         <Route path="/About" element={<About />} />
         <Route
